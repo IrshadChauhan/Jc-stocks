@@ -24,7 +24,7 @@ export default function TwoPointZeroPage() {
 
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-1">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Our Process</h2>
@@ -32,7 +32,7 @@ export default function TwoPointZeroPage() {
                   In this exclusive community, we spotlight stocks that are primed for rocket moves! Our process is simple yet powerful.
                 </p>
               </div>
-              <div className="grid gap-6">
+              <div className="flex gap-10">
                 <Card>
                   <CardHeader>
                     <Search className="h-8 w-8 text-primary mb-2" />
@@ -62,7 +62,7 @@ export default function TwoPointZeroPage() {
                 </Card>
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               <Image
                 alt="Trading Analysis"
                 className="aspect-video overflow-hidden rounded-xl object-cover object-center"
@@ -70,7 +70,7 @@ export default function TwoPointZeroPage() {
                 src="/placeholder.svg"
                 width={600}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -147,6 +147,12 @@ export default function TwoPointZeroPage() {
                 </p>
               </div>
               <div className="grid gap-2">
+                <h3 className="font-bold">How do I open an Upstox account?</h3>
+                <p className="text-gray-500">
+                  You can message us at our <Link className="bold underline text-blue-600" href="https://telegram.in/jc_upstox_bot">Upstox Bot</Link> and you will be given the details.
+                </p>
+              </div>
+              <div className="grid gap-2">
                 <h3 className="font-bold">Are there any charges? Is it lifetime free?</h3>
                 <p className="text-gray-500">
                   Yes, it is lifetime free. All you need to do is open an account and remain active by trading in it.
@@ -170,12 +176,7 @@ export default function TwoPointZeroPage() {
                   Yes, you get 1 month complimentary subscription of JC Stocks premium when you open an account under our link.
                 </p>
               </div>
-              <div className="grid gap-2">
-                <h3 className="font-bold">How do I open an Upstox account?</h3>
-                <p className="text-gray-500">
-                  You can message us at our Upstox bot (https://telegram.in/jc_upstox_bot) and you will be given the details.
-                </p>
-              </div>
+              
             </CardContent>
           </Card>
         </div>
