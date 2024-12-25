@@ -110,14 +110,14 @@ export default function JCStocksPage() {
                   Get access to market insights and join our growing community of traders
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-col gap-4 justify-center">
+              <CardContent className="flex flex gap-4 justify-center">
                 <Link href="https://telegram.im/jcstocksofficial">
                   <Button size="lg" className="w-full max-w-sm">
                     Join Public Stocks Group
                   </Button>
                 </Link>
                 <Link href="https://telegram.im/jcforexofficial">
-                  <Button size="lg" variant="outline" className="w-full max-w-sm">
+                  <Button size="lg"  className="w-full max-w-sm">
                     Join Public Forex Group
                   </Button>
                 </Link>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { BookOpen, BarChartIcon as ChartBar, LineChart, ListChecks, MessageCircle, Target, Users } from 'lucide-react'
 import Link from 'next/link';
 
@@ -168,13 +168,70 @@ export default function MentorshipPage() {
             </Card>
           </div>
 
-          <div className="mt-16 text-center">
-            <Link href="https://telegram.im/jcmentorship_bot">
-              <Button size="lg" className="w-full max-w-sm">
-                Join Mentorship Program
-              </Button>
-            </Link>
+          <div className="container px-4 md:px-6 py-12">
+            <div className="text-center">
+              <Link href="https://telegram.im/jcmentorship_bot">
+                <Button size="lg" className="w-full max-w-sm">
+                  Join Mentorship Program
+                </Button>
+              </Link>
+            </div>
           </div>
+
+          <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+            <div className="container px-4 md:px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>
+                <p className="text-gray-500 mt-2">Everything you need to know about our Mentorship Program</p>
+              </div>
+              <Card>
+                <CardContent className="grid gap-6 pt-6">
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">What is Lifetime Mentorship?</h3>
+                    <p className="text-gray-500">
+                      This is not a short-term 2-3 month course but a program designed to provide ongoing support and learning throughout your trading journey.
+                    </p>
+                  </div>
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">Is this a signal service?</h3>
+                    <p className="text-gray-500">
+                      No, this program is focused on teaching you how to trade independently. If you're only looking for trade signals, consider joining the premium channel where trading insights are shared.
+                    </p>
+                  </div>
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">What are the core focus areas?</h3>
+                    <p className="text-gray-500">
+                      You will learn what to trade, when to trade, how to trade, and understand the critical factors for making informed trading decisions.
+                    </p>
+                  </div>
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">How do you address mindset development?</h3>
+                    <p className="text-gray-500">
+                      The program addresses how to handle both losses and profits, ensuring you cultivate the right mindset for trading.
+                    </p>
+                  </div>
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">What kind of support will I receive?</h3>
+                    <p className="text-gray-500">
+                      You will have one-on-one access to me. There are no bots or intermediaries; your questions and messages will be answered directly by me. You'll also become part of a private group where mentees can discuss stocks and trades freely.
+                    </p>
+                  </div>
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">What about the community aspect?</h3>
+                    <p className="text-gray-500">
+                      Gain access to exclusive insights on stock price action and market trends. When necessary, I'll explain concepts via short videos and provide similar stocks for practice in our mentorship community channel.
+                    </p>
+                  </div>
+                  <div className="grid gap-2">
+                    <h3 className="font-bold">What's your commitment to students?</h3>
+                    <p className="text-gray-500">
+                      I'm dedicated to providing you with 100% support. However, success depends on your commitment to following the guidance and putting in the work. My promise is to help you become a disciplined, rule-based trader.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
         </div>
       </section>
     </main>
