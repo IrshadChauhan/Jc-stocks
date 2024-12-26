@@ -1,3 +1,4 @@
+import { SuccessStoriesCarousel } from "@/components/success-stories-carousel";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { BarChart, LineChart, Rocket, Search, TrendingUp } from 'lucide-react'
@@ -80,27 +81,15 @@ export default function TwoPointZeroPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">The Results Speak for Themselves</h2>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
-            <Card>
+          <div className="grid gap-6 lg:grid-cols-1">
+          <Card>
               <CardHeader>
-                <Rocket className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="text-2xl">10%++</CardTitle>
-                <CardDescription>Consistent Moves</CardDescription>
+                <CardTitle>Recent Success Stories</CardTitle>
+                <CardDescription>Previous Premium Call Results</CardDescription>
               </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <Rocket className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="text-2xl">15%++</CardTitle>
-                <CardDescription>Strong Performers</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <Rocket className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="text-2xl">20%</CardTitle>
-                <CardDescription>Upper Circuit Locks</CardDescription>
-              </CardHeader>
+              <CardContent>
+                <SuccessStoriesCarousel />
+              </CardContent>
             </Card>
           </div>
         </div>

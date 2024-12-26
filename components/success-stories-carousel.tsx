@@ -17,13 +17,18 @@ const successStories = [
   },
   {
     id: 2,
-    imageUrl: "/1.jpeg?height=300&width=600",
+    imageUrl: "/2.jpeg?height=300&width=600",
     alt: "Success Story 2"
   },
   {
     id: 3,
-    imageUrl: "/1.jpeg?height=300&width=600",
+    imageUrl: "/3.jpeg?height=300&width=600",
     alt: "Success Story 3"
+  },
+  {
+    id: 4,
+    imageUrl: "/4.jpeg?height=300&width=600",
+    alt: "Success Story 4"
   }
 ]
 
@@ -33,7 +38,7 @@ export function SuccessStoriesCarousel() {
       opts={{
         align: "start",
         loop: true,
-        autoPlay: true,
+        autolay: true,
         interval: 3000,
       }}
       className="w-full"

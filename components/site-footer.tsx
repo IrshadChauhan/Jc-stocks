@@ -1,6 +1,15 @@
-import { Facebook, Instagram, Mail, MessageCircle, Phone, Twitter, Youtube } from 'lucide-react'
-import Link from 'next/link'
-import { ContactForm } from './contact-form'
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MessageCircle,
+  Phone,
+  Send,
+  Twitter,
+  Youtube,
+} from "lucide-react";
+import Link from "next/link";
+import { ContactForm } from "./contact-form";
 
 export function SiteFooter() {
   return (
@@ -10,23 +19,37 @@ export function SiteFooter() {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">JCStocks</h3>
             <p className="text-gray-500 max-w-md">
-              Your trusted partner in the stock market. Join our community and access expert trading insights.
+              Your trusted partner in the stock market. Join our community and
+              access expert trading insights.
             </p>
             <div className="space-y-2">
-              {/* <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-primary" />
-                <span>+91 XXXXXXXXXX</span>
-              </div> */}
+              <h4 className="font-semibold">Support</h4>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span><Link href='https://telegram.im/jcstocks_bot' className='bold underline'>  Telegram Help </Link></span>
+                <span>jcstocksofficial@gmail.com</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                {/* <Mail className="h-4 w-4 text-primary" /> */}
+                <Send className="h-4 w-4 text-primary" />
+                <span>
+                  <Link
+                    href="https://telegram.im/jcstocks_bot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bold underline"
+                  >
+                    {" "}
+                    Telegram Help{" "}
+                  </Link>
+                </span>
               </div>
             </div>
             <div className="space-y-4">
               <h4 className="font-semibold">Follow Us</h4>
               <div className="flex flex-wrap gap-4">
-                <Link 
-                  href="https://youtube.com/@jcstocksofficial" 
+                <Link
+                  href="https://youtube.com/@jcstocksofficial"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -34,8 +57,8 @@ export function SiteFooter() {
                   <Youtube className="h-6 w-6" />
                   <span className="sr-only">YouTube</span>
                 </Link>
-                <Link 
-                  href="https://instagram.com/@jcstocks" 
+                <Link
+                  href="https://instagram.com/@jcstocks"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -43,8 +66,8 @@ export function SiteFooter() {
                   <Instagram className="h-6 w-6" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link 
-                  href="https://x.com/@jc_stocks" 
+                <Link
+                  href="https://x.com/@jc_stocks"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -52,13 +75,14 @@ export function SiteFooter() {
                   <Twitter className="h-6 w-6" />
                   <span className="sr-only">X (formerly Twitter)</span>
                 </Link>
-                <Link 
-                  href="https://telegram.im/@jcstocksofficial" 
+
+                <Link
+                  href="https://telegram.im/@jcstocksofficial"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  <MessageCircle className="h-6 w-6" />
+                  <Send className="h-6 w-6 " />
                   <span className="sr-only">Telegram</span>
                 </Link>
               </div>
@@ -67,10 +91,30 @@ export function SiteFooter() {
           <div className="space-y-4">
             <h4 className="font-semibold">Quick Links</h4>
             <nav className="flex flex-col gap-2">
-              <Link className="hover:text-primary transition-colors" href="/mentorship">Mentorship</Link>
-              <Link className="hover:text-primary transition-colors" href="/premium">Premium</Link>
-              <Link className="hover:text-primary transition-colors" href="/2.0">2.0</Link>
-              <Link className="hover:text-primary transition-colors" href="/jc-stocks">JC Stocks</Link>
+              <Link
+                className="hover:text-primary transition-colors"
+                href="/mentorship"
+              >
+                Mentorship
+              </Link>
+              <Link
+                className="hover:text-primary transition-colors"
+                href="/premium"
+              >
+                Premium
+              </Link>
+              <Link
+                className="hover:text-primary transition-colors"
+                href="/2.0"
+              >
+                2.0
+              </Link>
+              <Link
+                className="hover:text-primary transition-colors"
+                href="/jc-stocks"
+              >
+                JC Stocks
+              </Link>
             </nav>
           </div>
           <div className="space-y-4">
@@ -80,15 +124,26 @@ export function SiteFooter() {
         </div>
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="text-sm text-gray-500">© 2024 JCStocksOfficial.in. All rights reserved.</p>
+            <p className="text-sm text-gray-500">
+              © 2024 JCStocksOfficial.in. All rights reserved.
+            </p>
             <nav className="flex gap-4">
-              <Link className="text-sm text-gray-500 hover:underline" href="/terms">Terms</Link>
-              <Link className="text-sm text-gray-500 hover:underline" href="/privacy">Privacy</Link>
+              <Link
+                className="text-sm text-gray-500 hover:underline"
+                href="/terms"
+              >
+                Terms
+              </Link>
+              <Link
+                className="text-sm text-gray-500 hover:underline"
+                href="/privacy"
+              >
+                Privacy
+              </Link>
             </nav>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
