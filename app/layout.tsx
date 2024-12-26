@@ -1,16 +1,25 @@
 import { Inter } from 'next/font/google'
 import "./globals.css"
 import Link from "next/link"
-import { LineChart, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { SiteFooter } from "@/components/site-footer"
+import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "JC Stocks Official - Professional Trading Services",
   description: "Expert stock market trading services, mentorship, and exclusive telegram groups",
+  icons: {
+    icon: [
+      {
+        url: "/logo.jpeg",
+        href: "/logo.jpeg",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -23,8 +32,14 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
           <header className="px-4 lg:px-6 h-16 flex justify-between items-center border-b sticky top-0 bg-white z-50">
-            <Link className="flex items-center justify-center" href="/">
-              <LineChart className="h-6 w-6 text-primary" />
+            <Link className="flex items-center justify-center gap-2" href="/">
+              <Image 
+                src="/logo.jpeg" 
+                alt="JC Stocks Logo" 
+                width={32} 
+                height={32} 
+                className="border-1 border-black rounded-full"
+              />
               <span className="ml-2 text-xl font-bold">JCStocks</span>
             </Link>
             <nav className="ml-auto hidden lg:flex gap-4 sm:gap-6">

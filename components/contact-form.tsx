@@ -6,34 +6,37 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { submitContactForm } from '@/app/actions/contact'
+import { useActionState } from 'react'
+import { toast } from 'sonner'
 
 export function ContactForm() {
+  const [state, formAction] = useActionState(submitContactForm, null)
   const [isPending, setIsPending] = useState(false)
-  const [responseMessage, setResponseMessage] = useState<string | null>(null)
-  const [isSuccess, setIsSuccess] = useState<boolean | null>(null)
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setIsPending(true)
-    setResponseMessage(null)
-
-    const formData = new FormData(event.currentTarget)
-
+  const handleSubmit = async (formData: FormData) => {
     try {
-      const response = await submitContactForm(formData)
-      setIsSuccess(response.success)
-      setResponseMessage(response.message)
+      setIsPending(true)
+      const result = await formAction(formData)
+      if (result?.success) {
+        toast.success(result.message)
+        // Reset form
+        const form = document.querySelector('form') as HTMLFormElement
+        form?.reset()
+      } else {
+        toast.error(result?.message || 'Something went wrong')
+      }
     } catch (error) {
-      console.error('Error submitting the form:', error)
-      setIsSuccess(false)
-      setResponseMessage("Something went wrong. Please try again.")
+      toast.error('Failed to send message')
     } finally {
       setIsPending(false)
     }
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form 
+      action={handleSubmit}
+      className="space-y-4"
+    >
       <div className="grid gap-2">
         <Label htmlFor="name">Name</Label>
         <Input
@@ -68,11 +71,7 @@ export function ContactForm() {
       <Button type="submit" className="w-full" disabled={isPending}>
         {isPending ? 'Sending...' : 'Send Message'}
       </Button>
-      {responseMessage && (
-        <p className={`text-sm ${isSuccess ? 'text-green-600' : 'text-red-600'}`}>
-          {responseMessage}
-        </p>
-      )}
     </form>
   )
 }
+

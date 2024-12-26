@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { BookOpen, BarChartIcon as ChartBar, LineChart, ListChecks, MessageCircle, Target, Users } from 'lucide-react'
-import Link from 'next/link';
+import Link from 'next/link'
+import { ReviewsCarousel } from "@/components/reviews-carousel"
 
 export default function MentorshipPage() {
   return (
     <main className="flex-1">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-black text-white min-h-[40vh] flex items-center justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -21,7 +22,7 @@ export default function MentorshipPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8 md:py-12 lg:p-16">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
             <Card>
@@ -168,7 +169,7 @@ export default function MentorshipPage() {
             </Card>
           </div>
 
-          <div className="container px-4 md:px-6 py-12">
+          <div className="container px-4 md:px-6 py-8">
             <div className="text-center">
               <Link href="https://telegram.im/jcmentorship_bot">
                 <Button size="lg" className="w-full max-w-sm">
@@ -178,7 +179,17 @@ export default function MentorshipPage() {
             </div>
           </div>
 
-          <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+          <section className="w-full py-8 md:py-12 lg:p-16 bg-gray-50">
+            <div className="container px-4 md:px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold tracking-tighter">Mentee's Review</h2>
+                <p className="text-gray-500 mt-2">Hear what our students have to say about their journey</p>
+              </div>
+              <ReviewsCarousel />
+            </div>
+          </section>
+
+          <section className="w-full py-8 md:py-12 lg:p-16 bg-gray-100">
             <div className="container px-4 md:px-6">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>

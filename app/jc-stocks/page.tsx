@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardDescription, CardTitle } from "@/components/ui/card"
-import { CheckCircle, MessageCircle, Target, TrendingUp } from 'lucide-react'
-import Link from 'next/link';
+import { MessageCircle, Target, TrendingUp } from 'lucide-react'
+import Link from 'next/link'
+import { SuccessStoriesCarousel } from "@/components/success-stories-carousel"
 
 export default function JCStocksPage() {
   return (
     <main className="flex-1">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-black text-white min-h-[40vh] flex items-center justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -21,7 +22,7 @@ export default function JCStocksPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8 md:py-12 lg:p-16">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2">
             <Card>
@@ -29,28 +30,8 @@ export default function JCStocksPage() {
                 <CardTitle>Recent Success Stories</CardTitle>
                 <CardDescription>Previous Premium Call Results</CardDescription>
               </CardHeader>
-              <CardContent className="grid gap-4">
-                <div className="flex items-center gap-4">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <div>
-                    <h3 className="font-semibold">Stock XYZ</h3>
-                    <p className="text-sm text-gray-500">Entry: 100 | Target Hit: 120 | Return: 20%</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <div>
-                    <h3 className="font-semibold">Stock ABC</h3>
-                    <p className="text-sm text-gray-500">Entry: 250 | Target Hit: 285 | Return: 14%</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <div>
-                    <h3 className="font-semibold">Stock PQR</h3>
-                    <p className="text-sm text-gray-500">Entry: 150 | Target Hit: 180 | Return: 20%</p>
-                  </div>
-                </div>
+              <CardContent>
+                <SuccessStoriesCarousel />
               </CardContent>
             </Card>
 
@@ -76,7 +57,7 @@ export default function JCStocksPage() {
             </Card>
           </div>
 
-          <div className="mt-12">
+          <div className="mt-8">
             <Card>
               <CardHeader>
                 <CardTitle>Why Join Our Public Group?</CardTitle>
@@ -102,7 +83,7 @@ export default function JCStocksPage() {
             </Card>
           </div>
 
-          <div className="mt-12">
+          <div className="mt-8">
             <Card className="border-2 border-primary">
               <CardHeader>
                 <CardTitle className="text-2xl text-center">Join Our Telegram Group</CardTitle>
@@ -110,14 +91,14 @@ export default function JCStocksPage() {
                   Get access to market insights and join our growing community of traders
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex flex gap-4 justify-center">
+              <CardContent className="flex flex-wrap gap-4 justify-center">
                 <Link href="https://telegram.im/jcstocksofficial">
                   <Button size="lg" className="w-full max-w-sm">
                     Join Public Stocks Group
                   </Button>
                 </Link>
                 <Link href="https://telegram.im/jcforexofficial">
-                  <Button size="lg"  className="w-full max-w-sm">
+                  <Button size="lg" className="w-full max-w-sm">
                     Join Public Forex Group
                   </Button>
                 </Link>

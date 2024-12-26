@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function TwoPointZeroPage() {
   return (
     <main className="flex-1">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-black text-white min-h-[40vh] flex items-center justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -22,9 +22,9 @@ export default function TwoPointZeroPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8 md:py-12 lg:p-16">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-1">
+          <div className="grid gap-6 lg:grid-cols-2">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Our Process</h2>
@@ -32,7 +32,7 @@ export default function TwoPointZeroPage() {
                   In this exclusive community, we spotlight stocks that are primed for rocket moves! Our process is simple yet powerful.
                 </p>
               </div>
-              <div className="flex gap-10">
+              <div className="grid gap-6">
                 <Card>
                   <CardHeader>
                     <Search className="h-8 w-8 text-primary mb-2" />
@@ -62,20 +62,20 @@ export default function TwoPointZeroPage() {
                 </Card>
               </div>
             </div>
-            {/* <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <Image
                 alt="Trading Analysis"
                 className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                height={400}
-                src="/placeholder.svg"
+                height={600}
+                src="https://images.pexels.com/photos/6801872/pexels-photo-6801872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 width={600}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-gray-100">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">The Results Speak for Themselves</h2>
@@ -106,7 +106,7 @@ export default function TwoPointZeroPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8 md:py-12 lg:p-16">
         <div className="container px-4 md:px-6">
           <Card className="border-2 border-primary">
             <CardHeader>
@@ -126,7 +126,7 @@ export default function TwoPointZeroPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-gray-100">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>
@@ -144,12 +144,6 @@ export default function TwoPointZeroPage() {
                 <h3 className="font-bold">How can I join JC Stocks 2.0?</h3>
                 <p className="text-gray-500">
                   You can join by opening an Upstox account using our referral link.
-                </p>
-              </div>
-              <div className="grid gap-2">
-                <h3 className="font-bold">How do I open an Upstox account?</h3>
-                <p className="text-gray-500">
-                  You can message us at our <Link className="bold underline text-blue-600" href="https://telegram.in/jc_upstox_bot">Upstox Bot</Link> and you will be given the details.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -176,7 +170,12 @@ export default function TwoPointZeroPage() {
                   Yes, you get 1 month complimentary subscription of JC Stocks premium when you open an account under our link.
                 </p>
               </div>
-              
+              <div className="grid gap-2">
+                <h3 className="font-bold">How do I open an Upstox account?</h3>
+                <p className="text-gray-500">
+                  You can message us at our Upstox bot (https://telegram.in/jc_upstox_bot) and you will be given the details.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>

@@ -5,7 +5,7 @@ import { ContactForm } from './contact-form'
 export function SiteFooter() {
   return (
     <footer className="border-t">
-      <div className="container px-4 py-12 md:py-16 lg:py-20">
+      <div className="container px-4 py-8 md:py-12 lg:p-16">
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">JCStocks</h3>
@@ -13,13 +13,13 @@ export function SiteFooter() {
               Your trusted partner in the stock market. Join our community and access expert trading insights.
             </p>
             <div className="space-y-2">
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>+91 XXXXXXXXXX</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>help@jcstock</span>
+                <span><Link href='https://telegram.im/jcstocks_bot' className='bold underline'>  Telegram Help </Link></span>
               </div>
             </div>
             <div className="space-y-4">
@@ -35,7 +35,7 @@ export function SiteFooter() {
                   <span className="sr-only">YouTube</span>
                 </Link>
                 <Link 
-                  href="https://www.instagram.com/jcstocksofficial" 
+                  href="https://instagram.com/@jcstocks" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -78,7 +78,7 @@ export function SiteFooter() {
             <ContactForm />
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t">
+        <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p className="text-sm text-gray-500">© 2024 JCStocksOfficial.in. All rights reserved.</p>
             <nav className="flex gap-4">

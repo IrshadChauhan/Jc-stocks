@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function PremiumPage() {
   return (
     <main className="flex-1">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-black text-white min-h-[40vh] flex items-center justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -21,7 +21,7 @@ export default function PremiumPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8 md:py-12 lg:p-16">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
             <Card>
@@ -64,7 +64,7 @@ export default function PremiumPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8 md:py-12 lg:p-16">
         <div className="container px-4 md:px-6">
           <Card className="border-2 border-primary">
             <CardHeader>
@@ -76,7 +76,7 @@ export default function PremiumPage() {
             <CardContent className="flex justify-center">
               <Link href="https://telegram.im/jcpremium_payment_bot">
                 <Button size="lg" className="w-full max-w-sm">
-                  Subscribe Now
+                  Join Premium Now
                 </Button>
               </Link>
             </CardContent>
@@ -84,7 +84,7 @@ export default function PremiumPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-gray-100">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>
