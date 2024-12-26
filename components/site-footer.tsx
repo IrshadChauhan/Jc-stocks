@@ -1,9 +1,6 @@
 import {
-  Facebook,
   Instagram,
   Mail,
-  MessageCircle,
-  Phone,
   Send,
   Twitter,
   Youtube,

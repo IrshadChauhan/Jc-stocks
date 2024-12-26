@@ -38,8 +38,8 @@ export function SuccessStoriesCarousel() {
       opts={{
         align: "start",
         loop: true,
-        autolay: true,
-        interval: 3000,
+        // autolay: true,
+        // interval: 3000,
       }}
       className="w-full"
     >

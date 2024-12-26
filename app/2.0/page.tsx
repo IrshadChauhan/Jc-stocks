@@ -1,7 +1,7 @@
 import { SuccessStoriesCarousel } from "@/components/success-stories-carousel";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { BarChart, LineChart, Rocket, Search, TrendingUp } from 'lucide-react'
+import { BarChart,  Search, TrendingUp } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link";
 
@@ -48,7 +48,7 @@ export default function TwoPointZeroPage() {
                     <TrendingUp className="h-8 w-8 text-primary mb-2" />
                     <CardTitle>Top-Down Approach</CardTitle>
                     <CardDescription>
-                      A comprehensive method to ensure we're on the right side of the market trends.
+                      A comprehensive method to ensure we are on the right side of the market trends.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -101,7 +101,7 @@ export default function TwoPointZeroPage() {
             <CardHeader>
               <CardTitle className="text-2xl text-center">Ready to Take Your Research to the Next Level?</CardTitle>
               <CardDescription className="text-center text-lg">
-                Join the 2.0 community today and let's turn insights into results together!
+                Join the 2.0 community today and let us turn insights into results together!
               </CardDescription>
             </CardHeader>
             <CardContent className="flex justify-center">
@@ -144,7 +144,7 @@ export default function TwoPointZeroPage() {
               <div className="grid gap-2">
                 <h3 className="font-bold">When will I lose access to JC Stocks 2.0?</h3>
                 <p className="text-gray-500">
-                  You will lose access if you are inactive or stop trading in the account. Make sure you don't stay inactive frequently else you might lose access and won't be part of it again.
+                  You will lose access if you are inactive or stop trading in the account. Make sure you donot stay inactive frequently else you might lose access and will not be part of it again.
                 </p>
               </div>
               <div className="grid gap-2">

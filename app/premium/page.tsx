@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { BarChart, CheckCircle, LineChart, Target, TrendingUp } from 'lucide-react'
+import { BarChart, CheckCircle, Target, TrendingUp } from 'lucide-react'
 import Link from 'next/link';
 
 export default function PremiumPage() {
@@ -125,7 +125,7 @@ export default function PremiumPage() {
                 <div className="grid gap-2">
                   <h3 className="font-bold">How many recommendations per month?</h3>
                   <p className="text-gray-500">
-                    You can expect 10+ recommendations per month. If fewer calls are provided, your next month's subscription will be free.
+                    You can expect 10+ recommendations per month. If fewer calls are provided, your next month subscription will be free.
                   </p>
                 </div>
                 <div className="grid gap-2">

@@ -1,6 +1,5 @@
 'use client'
 
-import { Card } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -54,8 +53,8 @@ export function ReviewsCarousel() {
       opts={{
         align: "start",
         loop: true,
-        autoPlay: true,
-        interval: 500,
+        // autoPlay: true,
+        // interval: 500,
       }}
       className="w-full max-w-5xl mx-auto"
     >

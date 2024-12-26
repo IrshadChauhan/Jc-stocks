@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { BookOpen, BarChartIcon as ChartBar, LineChart, ListChecks, MessageCircle, Target, Users } from 'lucide-react'
+import { BookOpen, BarChartIcon as ChartBar, LineChart, ListChecks,  Target, Users } from 'lucide-react'
 import Link from 'next/link'
 import { ReviewsCarousel } from "@/components/reviews-carousel"
 
@@ -182,7 +182,7 @@ export default function MentorshipPage() {
           <section className="w-full py-8 md:py-12 lg:p-16 bg-gray-50">
             <div className="container px-4 md:px-6">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold tracking-tighter">Mentee's Review</h2>
+                <h2 className="text-3xl font-bold tracking-tighter">Mentees Review</h2>
                 <p className="text-gray-500 mt-2">Hear what our students have to say about their journey</p>
               </div>
               <ReviewsCarousel />
@@ -206,7 +206,7 @@ export default function MentorshipPage() {
                   <div className="grid gap-2">
                     <h3 className="font-bold">Is this a signal service?</h3>
                     <p className="text-gray-500">
-                      No, this program is focused on teaching you how to trade independently. If you're only looking for trade signals, consider joining the premium channel where trading insights are shared.
+                      No, this program is focused on teaching you how to trade independently. If you are only looking for trade signals, consider joining the premium channel where trading insights are shared.
                     </p>
                   </div>
                   <div className="grid gap-2">
@@ -224,19 +224,19 @@ export default function MentorshipPage() {
                   <div className="grid gap-2">
                     <h3 className="font-bold">What kind of support will I receive?</h3>
                     <p className="text-gray-500">
-                      You will have one-on-one access to me. There are no bots or intermediaries; your questions and messages will be answered directly by me. You'll also become part of a private group where mentees can discuss stocks and trades freely.
+                      You will have one-on-one access to me. There are no bots or intermediaries; your questions and messages will be answered directly by me. You will also become part of a private group where mentees can discuss stocks and trades freely.
                     </p>
                   </div>
                   <div className="grid gap-2">
                     <h3 className="font-bold">What about the community aspect?</h3>
                     <p className="text-gray-500">
-                      Gain access to exclusive insights on stock price action and market trends. When necessary, I'll explain concepts via short videos and provide similar stocks for practice in our mentorship community channel.
+                      Gain access to exclusive insights on stock price action and market trends. When necessary, I will explain concepts via short videos and provide similar stocks for practice in our mentorship community channel.
                     </p>
                   </div>
                   <div className="grid gap-2">
-                    <h3 className="font-bold">What's your commitment to students?</h3>
+                    <h3 className="font-bold">What is your commitment to students?</h3>
                     <p className="text-gray-500">
-                      I'm dedicated to providing you with 100% support. However, success depends on your commitment to following the guidance and putting in the work. My promise is to help you become a disciplined, rule-based trader.
+                      I am dedicated to providing you with 100% support. However, success depends on your commitment to following the guidance and putting in the work. My promise is to help you become a disciplined, rule-based trader.
                     </p>
                   </div>
                 </CardContent>
