@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { SiteFooter } from "@/components/site-footer"
 import Image from "next/image"
-// import { OfferPopup } from "@/components/offer-popup"
+import { OfferPopup } from "@/components/offer-popup"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -86,7 +86,7 @@ export default function RootLayout({
           {children}
           <SpeedInsights />
           <SiteFooter />
-          {/* <OfferPopup /> */}
+          <OfferPopup />
         </div>
       </body>
     </html>

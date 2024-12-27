@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { CountdownTimer } from './countdown-timer'
+// import { CountdownTimer } from './countdown-timer'
 import { useRouter } from 'next/navigation'
 
 export function OfferPopup() {
@@ -41,10 +41,10 @@ export function OfferPopup() {
             <p className="text-sm text-muted-foreground">Limited Period Offer</p>
           </div>
           <div className="text-center">
-            <p className="text-lg font-semibold text-red-500">Batch Closes Soon!</p>
+            <p className="text-lg font-semibold text-red-500">Batch Closes On January 15!</p>
             <div className="mt-4">
 {/* <CountdownTimer targetDate={new Date(2024, 0, 15, 23, 59, 59)} /> */}
-<CountdownTimer targetDate={new Date(2024, 0, 15, 23, 59, 59)} />
+{/* <CountdownTimer targetDate={new Date(2024, 0, 15, 23, 59, 59)} /> */}
 
             </div>
           </div>
