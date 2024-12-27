@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from 'next/font/google'
 import "./globals.css"
 import Link from "next/link"
@@ -6,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { SiteFooter } from "@/components/site-footer"
 import Image from "next/image"
+// import { OfferPopup } from "@/components/offer-popup"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -82,7 +84,9 @@ export default function RootLayout({
             </Sheet>
           </header>
           {children}
+          <SpeedInsights />
           <SiteFooter />
+          {/* <OfferPopup /> */}
         </div>
       </body>
     </html>

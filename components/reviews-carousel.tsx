@@ -8,44 +8,60 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { ReviewCard } from "./review-card"
+import { reviews } from "@/public/reviews"
 
-const reviews = [
-  {
-    name: "Nirmal Adhiya",
-    profession: "Banking, Part time trader",
-    review: `Firstly thanks alot sir for sharpening the concept of demand supply on which i am working with.
+// const reviews = [
+//   {
+//     name: "Nirmal Adhiya",
+//     profession: "Banking, Part time trader",
+//     review: `Firstly thanks alot sir for sharpening the concept of demand supply on which i am working with.
 
-I have a prior knowledge of demand supply theory but somehow not working well with it, so i joined mentorship program of your's because you are senior to me in this theory....after joining i have improving myself with reserch and confidence.
+// I have a prior knowledge of demand supply theory but somehow not working well with it, so i joined mentorship program of your's because you are senior to me in this theory....after joining i have improving myself with reserch and confidence.
 
-Mentorship join karne se psychology improve ho rahi he and aapka stock TDA(top down approch) is on another level...and sir aapne jo community group banaya he usme aap new ideas implement kar rahe ho wo bhi bahot badhiya he jisse price actions samjna bahot easy ho raha he.
+// Mentorship join karne se psychology improve ho rahi he and aapka stock TDA(top down approch) is on another level...and sir aapne jo community group banaya he usme aap new ideas implement kar rahe ho wo bhi bahot badhiya he jisse price actions samjna bahot easy ho raha he.
 
-One of the best line i heard in last live session " ANY PROFIT IS BETTER THAN A LOSS" so always follow the rules.
+// One of the best line i heard in last live session " ANY PROFIT IS BETTER THAN A LOSS" so always follow the rules.
 
-One of the best decision i have ever made to join your mentorship and select demand supply as my base theory of trading.
+// One of the best decision i have ever made to join your mentorship and select demand supply as my base theory of trading.
 
-Salute to you and your hardwork.`,
-  },
-  {
-    name: "Akash",
-    profession: "Part time trader",
-    review: `Hello…I have joined JC Mentorship and I would like to give my feedback…
-We all know that learning something is easy but how to practice it is important.
-After joining the mentorship program, the guidance given and the efforts that have been guided in the mentorship have made learning like a beginner feel like a journey has begun.
-I don't have the words to explain in simple words…`,
-  },
-    {
-    name: "Shrimant Jangra Sir",
-    profession: "Part time trader",
-    review: `I can very proudly say I’ve made best  decision to join your mentorship programme where i get my every doubt cleared regarding trading and psychology.
-As we all know trading is 90% mindset game and you are master in it and I am very lucky to learn that mindgame  from you .🤗
+// Salute to you and your hardwork.`,
+//   },
+//   {
+//     name: "Akash",
+//     profession: "Part time trader",
+//     review: `Hello…I have joined JC Mentorship and I would like to give my feedback…
+// We all know that learning something is easy but how to practice it is important.
+// After joining the mentorship program, the guidance given and the efforts that have been guided in the mentorship have made learning like a beginner feel like a journey has begun.
+// I don't have the words to explain in simple words…`,
+//   },
+//     {
+//     name: "Shrimant Jangra Sir",
+//     profession: "Part time trader",
+//     review: `I can very proudly say I’ve made best  decision to join your mentorship programme where i get my every doubt cleared regarding trading and psychology.
+// As we all know trading is 90% mindset game and you are master in it and I am very lucky to learn that mindgame  from you .🤗
 
-Your passion for the trading truly shines through, making every session engaging and insightful. Thank you for creating such a positive learning environment.♥️
+// Your passion for the trading truly shines through, making every session engaging and insightful. Thank you for creating such a positive learning environment.♥️
 
 
-Lasssttttt thing ………
-Big fan of your TDA ♥️♥️♥️♥️`,
-  },
-]
+// Lasssttttt thing ………
+// Big fan of your TDA ♥️♥️♥️♥️`,
+//   },
+//     {
+//     name: "Anuraj Rajput",
+//     profession: "Part time trader",
+//     review: `JCStocks is not just a trading mentorship platform; it’s a comprehensive learning experience that equips traders with the knowledge, skills, and support needed to succeed in the financial markets. If you’re serious about improving your trading skills and achieving your financial goals, I highly recommend joining JCStocks. It’s an investment in your trading future that you won’t regret!
+// `,
+//   },
+//     {
+//     name: "Shashank Upadhyay",
+//     profession: "Full time trader",
+//     review: `Whatever session for us you take it's always mind-blowing and full of practical learning, I never regret why I Join your mentorship program, you being my mentor is like my close friend
+
+// We were doing TDA getting trades, following everything but was missing something which was someone's guidance who himself is a RULE BASED TRADER , for individual stock behaviour and more importantly trading psychology ❤️
+
+// Waiting for more sessions, and more Learnings ❤️`,
+//   },
+// ]
 
 export function ReviewsCarousel() {
   return (

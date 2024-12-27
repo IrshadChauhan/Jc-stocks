@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
+import Link from "next/link"
 
 const successStories = [
   {
@@ -47,6 +48,8 @@ export function SuccessStoriesCarousel() {
         {successStories.map((story) => (
           <CarouselItem key={story.id}>
             <div className="relative aspect-[2/1] w-full overflow-hidden rounded-lg">
+            <Link href='https://www.youtube.com/playlist?list=PLPrx47molqZBWmqwCqRlFJRZ2lCAdYTVE' target="_blank">
+
               <Image
                 src={story.imageUrl}
                 alt={story.alt}
@@ -54,6 +57,9 @@ export function SuccessStoriesCarousel() {
                 className="object-cover"
                 priority
               />
+              </Link>
+
+
             </div>
           </CarouselItem>
         ))}
