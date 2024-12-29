@@ -67,4 +67,28 @@ And as of now i am become a complete full time pro trader.
 Thanks a lot from bottom of my heart.
 Now we are become like a Family member.`,
   },
+  {
+    name: "Ashraf Sayyed",
+    profession: "Part time trader",
+    review: `Joining JC stocks is one of the best desicion i ever made. I learned various things from jamil sir like 
+1. Creating and managing favorite list
+2. Cleared some quries I had with TDA.
+3. How to make a clearer view of a stock.
+4. Which zones to trade and which ones to avoid
+5. How to continuosly track a stock.
+And many more there is alot to say but i dont have enough words to explain everything. From this review I would like to thank one of the best mentor i came across.❤️`,
+  },
+  {
+    name: "Kaushik Ram",
+    profession: "Business,Part time trader",
+    review: `With your guidance and mentorship support,i have learned a lot from you  taught me practical examples, small queris your Q&A sessions solve  my many pending doubts . Now I feel more confident in my trading skills.
+` },
+  {
+    name: "Udaya ",
+    profession: "Full time trader",
+    review: `I had been missing some individual support in my trading journey. Thats when I came to know about JC mentorship. I had a close look on all the charts that were shared on instagram pages. Thats when I felt that I should be joing JC mentorship program. After joining my trading and most importantly psycology has changed a lot. The live sessions, how to do TDA,how to make fav list and how to analyse sectors are my highlights points. And now recetly started with quiz section which is best. It helps me to do proper research on quiz stocks. At last thanks a lot for this program.` },
+  {
+    name: "Fejan",
+    profession: "Full time trader",
+    review: `I've been a part of JC mentorship program for a few months, and it has truly been a game-changer for my trading journey. His TDA has changed the way I analyze both stocks and sectors. The emphasis on advanced price action techniques is not only practical but also easy to grasp, making it ideal for traders at any skill level.Thanks for bringing the lifetime mentorship program. By the way that VIMTALABS analysis on community was top notch.` },
 ];

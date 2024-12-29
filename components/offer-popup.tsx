@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button"
 // import { CountdownTimer } from './countdown-timer'
 import { useRouter } from 'next/navigation'
+import { motion } from 'framer-motion'
 
 export function OfferPopup() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +14,7 @@ export function OfferPopup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true)
-    }, 10000) // 10 seconds
+    }, 5000) // 10 seconds
 
     return () => clearTimeout(timer)
   }, [])
@@ -25,39 +26,53 @@ export function OfferPopup() {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-gradient-to-b from-indigo-50 via-white to-emerald-50 shadow-lg rounded-lg">
         <DialogHeader>
-          <DialogTitle className="text-center text-2xl font-bold text-primary">
-            Mentorship is LIVE!
-          </DialogTitle>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <DialogTitle className="text-center text-3xl font-extrabold text-indigo-600">
+              New Mentorship Batch Announced!
+            </DialogTitle>
+          </motion.div>
         </DialogHeader>
-        <div className="space-y-6 py-4">
-          <div className="text-center space-y-2">
+        <motion.div
+          initial={{ scale: 0.9 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className="space-y-6 py-4"
+        >
+          <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-2">
-              <span className="text-3xl font-bold">₹9,999</span>
-              <span className="text-xl text-muted-foreground line-through">₹19,999</span>
-              <span className="text-green-500 font-semibold">50% OFF</span>
+              <span className="text-4xl font-bold text-emerald-600">₹9,999</span>
+              <span className="text-lg text-gray-500 line-through">₹19,999</span>
+              <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-semibold">
+                50% OFF
+              </span>
             </div>
-            <p className="text-sm text-muted-foreground">Limited Period Offer</p>
+            <p className="text-sm text-indigo-500">Flexible payment options available starting at ₹2,999/month</p>
+            <p className="text-base font-medium text-red-500">Limited Period Offer</p>
           </div>
-          <div className="text-center">
-            <p className="text-lg font-semibold text-red-500">Batch Closes On January 15!</p>
+          {/* <div className="text-center">
+            <p className="text-lg font-semibold text-indigo-600">Batch Closes On January 15!</p>
             <div className="mt-4">
-{/* <CountdownTimer targetDate={new Date(2024, 0, 15, 23, 59, 59)} /> */}
-{/* <CountdownTimer targetDate={new Date(2024, 0, 15, 23, 59, 59)} /> */}
-
+              <CountdownTimer targetDate={new Date('2024-01-15T23:59:59')} />
             </div>
-          </div>
-          <Button 
-            className="w-full"
+          </div> */}
+          <Button
+            className="w-full bg-gradient-to-r from-emerald-500 to-indigo-500 text-white hover:from-emerald-600 hover:to-indigo-600"
             size="lg"
             onClick={handleJoinNow}
           >
-            Join Now
+            Enroll Now
           </Button>
-        </div>
+          <div className="text-center text-sm text-gray-500 mt-2">
+            To know more, contact <span className="text-indigo-600 font-semibold">@jcmentorship_bot</span>
+          </div>
+        </motion.div>
       </DialogContent>
     </Dialog>
   )
 }
-

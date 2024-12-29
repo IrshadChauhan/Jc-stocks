@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function TwoPointZeroPage() {
   return (
     <main className="flex-1">
-      <section className="w-full py-8 md:py-12 lg:p-16 bg-black text-white min-h-[40vh] flex items-center justify-center">
+      <section className="w-full py-8 md:py-12 lg:p-16 bg-gradient-to-b from-black via-emerald-950 to-black text-white min-h-[40vh] flex items-center justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -18,6 +18,18 @@ export default function TwoPointZeroPage() {
               <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
                 Where Stocks Take Off like rocket 🚀
               </p>
+              <div className="text-center py-5">
+              <Link
+                href="https://telegram.im/jc_upstox_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group"
+              >
+                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                <span className="relative ">Join 2.0 Community</span>
+              </Link>
+            </div>
             </div>
           </div>
         </div>
@@ -162,7 +174,7 @@ export default function TwoPointZeroPage() {
               <div className="grid gap-2">
                 <h3 className="font-bold">How do I open an Upstox account?</h3>
                 <p className="text-gray-500">
-                  You can message us at our Upstox bot (https://telegram.in/jc_upstox_bot) and you will be given the details.
+                  You can message us at our  <Link href='https://telegram.in/jc_upstox_bot' className="">Upstox bot</Link> and you will be given the details.
                 </p>
               </div>
             </CardContent>
