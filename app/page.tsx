@@ -144,6 +144,7 @@ import { ArrowRight, LineChart, Rocket, Target, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { YouTubeSection } from "@/components/youtube-section";
 
 const container = {
   hidden: { opacity: 0 },
@@ -353,6 +354,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <YouTubeSection/>
     </main>
   );
 }
