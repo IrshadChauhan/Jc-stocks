@@ -15,6 +15,69 @@ One of the best decision i have ever made to join your mentorship and select dem
 Salute to you and your hardwork.`,
   },
   {
+    name: "Kritik ",
+    profession: "Full Time Trader",
+    review: `Joining your mentorship program was truly a rewarding experience. 
+You genuinely invested a lot of time in my growth & helped me to gain clarity & confidence.
+It's more than just mentorship- a journey to a pro trader 
+Your best concept was finding WIT/MIT trades on weekend 
+& your 125 Ema concept is highly recommended !
+
+Thanx for support & I hope,  I keep growing more in your guidance
+
+Regards`,
+  },
+  {
+    name: "Rohith ",
+    profession: "Part Time Trader",
+    review: `I took the mentorship from Jamil. His way of teaching is awesome. The unique quality of his teaching is that he does TDA with each and every point. I learnt so much from him about how to look at the chart. He is like our own friend in trading journey. He respond very quickly to our messages and clear each and every doubt patiently. 
+
+Lastly I would highly recommend to others also to join the mentorship program.`,
+  },
+  {
+    name: "Faisal ",
+    profession: "Full Time Trader",
+    review: `A Game-Changer for My Trading Career
+This mentorship program is hands down the best investment I’ve made in my trading journey. The way Jamil Sir explains market structure, demand & supply zones, and entry/exit strategies is crystal clear.
+ What sets this program apart is the lifetime mentorship, access to a premium support group, and his personal guidance at every step.
+I’ve gained confidence, consistency, and real results.
+
+Highly recommended to anyone who wants to take trading seriously!`,
+  },
+  {
+    name: "Rishabh",
+    profession: "Trader",
+    review: `I had a great experience in the mentorship program with Jamil Chauhan. His guidance was clear, practical, and truly helped me grow in the right direction. I’m grateful for all the support and insights he shared.
+Thanku for ur mentorship😊❤️`,
+  },
+  {
+    name: "Yashwant",
+    profession: "Part Time Trader",
+    review: `Structured Approach:
+Jamil Sir creates a well-organized and systematic plan tailored to each student's comprehension level, ensuring effective learning.
+
+Post-Session Support:
+After each session, he addresses students’ doubts, queries, and issues personally, showing a strong commitment to their understanding.
+
+Direct Interaction:
+Sir personally messages students to ask about their concerns and provides solutions to their specific challenges, which adds a personal touch to the mentorship.
+
+Simple and Clear Explanations:
+Concepts are explained in very simple, layman terms—so clearly that even a beginner or a child could understand.`,
+  },
+  {
+    name: "Gurmeet",
+    profession: "Full Time trader",
+    review: `Mentorship program bhot acha ha .
+Aap bhot detail me chija samjata ho , apka charts post se bhot help milti ha .
+Thanks for supporting ❤️❤️`,
+  },
+  {
+    name: "Thejaswini ",
+    profession: "Full Time Trader",
+    review: `Jamil Sir, "Is a great, positive and supportive mentor." He is friendly, & empathetic. Apart from technical sessions, he clarify any additional questions or doubts individually via dms, he often responds quickly and clarify soon. For the best outcome, the mentee should also be proactive and put in the work as well.`,
+  },
+  {
     name: "Akash",
     profession: "Part time trader",
     review: `Hello…I have joined JC Mentorship and I would like to give my feedback…
@@ -90,5 +153,6 @@ And many more there is alot to say but i dont have enough words to explain every
   {
     name: "Fejan",
     profession: "Full time trader",
-    review: `I've been a part of JC mentorship program for a few months, and it has truly been a game-changer for my trading journey. His TDA has changed the way I analyze both stocks and sectors. The emphasis on advanced price action techniques is not only practical but also easy to grasp, making it ideal for traders at any skill level.Thanks for bringing the lifetime mentorship program. By the way that VIMTALABS analysis on community was top notch.` },
+    review: `I've been a part of JC mentorship program for a few months, and it has truly been a game-changer for my trading journey. His TDA has changed the way I analyze both stocks and sectors. The emphasis on advanced price action techniques is not only practical but also easy to grasp, making it ideal for traders at any skill level.Thanks for bringing the lifetime mentorship program. By the way that VIMTALABS analysis on community was top notch.` 
+  },
 ];

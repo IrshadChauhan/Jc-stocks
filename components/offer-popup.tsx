@@ -52,8 +52,13 @@ export function OfferPopup() {
                 50% OFF
               </span>
             </div>
-            <p className="text-sm text-indigo-500">Flexible payment options available starting at ₹2,999/month</p>
-            <p className="text-base font-medium text-red-500">Limited Period Offer</p>
+            <p className="text-sm text-indigo-500">Flexible payment options available starting at ₹2,499/month</p>
+            <p className="text-base font-medium text-red-500">
+              Last Chance To Join At <b>9999</b>
+              <br />
+Prices Will Increase From Next Batch
+               </p>
+
           </div>
           {/* <div className="text-center">
             <p className="text-lg font-semibold text-indigo-600">Batch Closes On January 15!</p>
