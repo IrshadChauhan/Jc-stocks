@@ -15,7 +15,7 @@ One of the best decision i have ever made to join your mentorship and select dem
 Salute to you and your hardwork.`,
   },
   {
-    name: "Kritik ",
+    name: "Kritika",
     profession: "Full Time Trader",
     review: `Joining your mentorship program was truly a rewarding experience. 
 You genuinely invested a lot of time in my growth & helped me to gain clarity & confidence.
@@ -26,6 +26,15 @@ Your best concept was finding WIT/MIT trades on weekend
 Thanx for support & I hope,  I keep growing more in your guidance
 
 Regards`,
+  },
+  {
+    name: "Suraj Mane",
+    profession: "Full Time Trader",
+    review: `FIRSTLY I WOULD LIKE TO THANK YOU SIRJI FOR WHATEVER YOU HAVE TAUGHT IT HAS CHANGED MY TRADING JOURNEY NOW I'M ABLE TO READ THE CHART WITHOUT ANY CONFUSION..
+ALREADY I WAS HAVING THE KNOWLEDGE OF DEMAND AND SUPPLY THERORY BUT WAS STRUGGLING TO APPLY THE CONCEPT DUE TO CONFUSION.
+BUT NOW AFTER JOINING YOUR MENTORSHIP EVERYTHING IS CLEAR AND EASY.
+FULLY SATISFIED WITH THE MENTORSHIP PROGRAM...
+THANK YOU SIRJI FOR CHANGING MY TRADING JOURNEY ❤️🚀`,
   },
   {
     name: "Rohith ",
